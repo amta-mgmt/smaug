@@ -8,10 +8,10 @@
     "smaug": "src/cli.js"
   },
   "scripts": {
-    "fetch": "node src/cli.js fetch",
-    "process": "node src/cli.js process",
-    "start": "node src/cli.js",
-    "test": "node --test"
+    "fetch": "bun src/cli.js fetch",
+    "process": "bun src/cli.js process",
+    "start": "bun src/cli.js",
+    "test": "bun test"
   },
   "keywords": [
     "twitter",
@@ -26,8 +26,10 @@
   "dependencies": {
     "dayjs": "^1.11.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "bun-types": "^1.0.0"
+  },
   "engines": {
-    "node": ">=20"
+    "bun": ">=1.0.0"
   }
 }
